@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Daily Water Calculator">
+  <meta name="keywords" content="Water Calculator, Water Consumption, Proper Hydration">
+  <meta charset="utf-8">
+  <title> Water   Tranqueur</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="heading">
+
+    <h1> Water Tranqueur </h1>
+  </div>
+  <div class="container 2">
+    <div class="box-3">
+      <form id="personal_info" onsubmit="return false">
+
+
+        <legend class="info">Personal Information for tracking your l'eau intake : </legend>
+        <fieldset>
+
+
+
+          <label for="weight"> Please enter your weight:</label><br>
+          <input type="text" id="weight" size="3" maxlength="5"><br>
+          <label for="age"> Please enter your age: </label> <br>
+          <input type="text" id="age" size="3" maxlength="5"> <br>
+          <label for="exercise">How long do you exercise per day (minutes)?</label><br>
+          <input type="text" id="exercise" size="3" maxlength="5"><br>
+
+          <label for="required_water">Required daily amount of water in litres:</label><br>
+          <input type="text" id="required_water" size="8" maxlength="5"><br>
+          <label for="taken"> Amount of water taken </label> <br>
+          <input type="text" id="taken" size="3" maxlength="5"> <br>
+
+          <button id="calculate" onClick="calculateWater();">Calculate</button>
+          <button id="clear" onclick="resetForm();">Clear</button><br>
+          <label for="water_bottles">Number of litres of water needed:</label><br>
+          <input type="text" id="water_bottles" size="8" maxlength="5">
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
